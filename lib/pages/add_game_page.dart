@@ -16,7 +16,7 @@ class _AddGameState extends State<AddGame> {
   final _titleController = TextEditingController();
   final _descriptionController = TextEditingController();
   DateTime selectedDate = DateTime.now();
-  String _platformValue = 'PC'; // Valor padrão é PC
+  String _platformValue = 'PC';
   final _companyController = TextEditingController();
   final _imageUrlController = TextEditingController();
 
@@ -30,7 +30,7 @@ class _AddGameState extends State<AddGame> {
       _titleController.text = widget.game!.title;
       _descriptionController.text = widget.game!.description;
       selectedDate = formater.parse(widget.game!.date);
-      _platformValue = widget.game!.platform; // Preencher a plataforma atual
+      _platformValue = widget.game!.platform;
       _companyController.text = widget.game!.company;
       _imageUrlController.text = widget.game!.image;
     }
